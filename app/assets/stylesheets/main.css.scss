@@ -126,15 +126,30 @@ html,body{
 
 span#title{
 	display:block;
-	width:100%;
-	text-align:center;
 	font-family: 'Titillium Web', sans-serif;
 	font-weight:bold;
+	font-size:76px;
+	@include textShadow(1px 1px 4px, #777);
+}
+div.slide{
+	width:100%;
+	//max-width:980px;
+}
+#slide1{
+	background:transparent url('/assets/back_1_15.jpg') no-repeat;
+	min-height:400px;
+	background-size: cover;
 }
 
 #slide2{
 	background-image:url('/assets/footprints.png');
 	background-color:#f68f67;
+	color:#ffffff;
+	height:700px;
+}
+#slide3{
+	background:transparent url('/assets/back_2_30.jpg') no-repeat;
+	min-height:600px;
 	color:#ffffff;
 }
 #slide2 h1 {
